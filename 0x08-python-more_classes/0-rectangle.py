@@ -1,4 +1,4 @@
-#!/usr/bin/pythoni3
+#!/usr/bin/pythion3
 """rectangle class"""
 
 
