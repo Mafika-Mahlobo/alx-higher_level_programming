@@ -1,0 +1,49 @@
+# test file to for add_integer function
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+>>> add_integer(1, 2)
+3
+
+>>> add_integer(4, 5.5)
+9
+
+>>> add_integer('a', 5)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+
+>>> add_integer(6, 'y')
+Traceback (most recent call last):
+    ...
+TypeError: b must be an integer
+
+>>> add_integer('rhf', 'r')
+Traceback (most recent call last):
+   ...
+TypeError: a must be an integer
+
+>>> add_integer('2', 5)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+
+>>> add_integer(3, '4')
+Traceback (most recent call last):
+    ...
+TypeError: b must be an integer
+
+>>> add_integer('3', '5')
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+
+>>> add_integer(a, 2)
+Traceback (most recent call last):
+    ...
+NameError: name 'a' is not defined
+
+>>> add_integer(2, e)
+Traceback (most recent call last):
+    ...
+NameError: name 'e' is not defined
