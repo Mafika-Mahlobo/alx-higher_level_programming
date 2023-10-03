@@ -1,63 +1,53 @@
 #!/usr/bin/python3
 
 """
-This module contain a class that defines a rectangle
+This module contains a Rectoangle calss
 """
 
 
 class Rectangle:
 
     """
-    This class defines a rectangle
+    Rerectangle class with public methods.
     """
 
     def __init__(self, width=0, height=0):
-        """
-        Initializes an instance of theia class.
+        """Initialize a new Rectangle.
 
         Args:
-            width(int): width of a rectangle
-            height(int): height of a rectangle
-
-        Returns:
-            self.__width(int): width of a rectangle instance
-            self.__height(int): height of a rectangle instance
+            width (int): The width of the new rectangle.
+            height(int): The height of the new rectangle.
         """
 
         if not isinstance(width, int):
             raise TypeError("width must be an integer")
-
         if width < 0:
             raise ValueError("width must be >= 0")
 
         if not isinstance(height, int):
             raise TypeError("height must be an integer")
-
         if height < 0:
             raise ValueError("height must be >= 0")
 
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
-
-        """ Returns width ofa rectangle instace"""
+        """Returns the width of the Rectangle."""
         return self.__width
 
     @width.setter
     def width(self, value):
-
-        """Sets the width of a rectnge"""
+        """Sets the width of a rectangle"""
         self.__width = value
 
     @property
     def height(self):
-
-        """Returns the height of a rectangle"""
+        """Returns the height of the Rectangle."""
         return self.__height
 
     @height.setter
     def height(self, value):
-        """Sets the height of a rectagnle"""
+        """Sets the height of a rectangle"""
         self.__height = value
