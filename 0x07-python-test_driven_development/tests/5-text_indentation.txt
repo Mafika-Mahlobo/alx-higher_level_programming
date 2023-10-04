@@ -1,0 +1,29 @@
+# This is a test file for 5-text_indentation.py.
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text_indentation("One. two three four: five six? seven")
+one.
+<BLANKLINE>
+two three four:
+<BLANKLINE>
+five six?
+<BLANKLINE>
+seven
+
+>>> text_indentation(4)
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string
+
+>>> text_indentation(1.4)
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string
+
+>>> text_indentation("")
+
+>>> text_indentation()
+Traceback (most recent call last):
+    ...
+TypeError: text_indentation() missing 1 required positional argument: 'text'
