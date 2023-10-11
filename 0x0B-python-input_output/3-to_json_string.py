@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-Module containing a function that return a 
+Module containing a function that return a
 JSON representation of an objects
 """
 import json
