@@ -110,10 +110,10 @@ class Rectangle(Base):
     def display(self):
         """prints rectangle on stdout using '#'"""
 
-        for i in range(self.__height):
-            for k in range(self.__width):
-                print("#", end="")
+        for i in range(self.__y):
             print()
+        for j in range(self.__height):
+            print(" " * self.__x + "#" * self.__width)
 
     def __str__(self):
         """overiding the __str__ method"""
