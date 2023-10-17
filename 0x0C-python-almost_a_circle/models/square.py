@@ -51,3 +51,12 @@ class Square(Rectangle):
                 self.x = kwargs["x"]
             if "y" in kwargs:
                 self.y = kwargs["y"]
+
+    def to_dictionary(self):
+        """Overriding to_dictionary method from parent class - Rectangle"""
+        return {
+            "id": self.id,
+            "x": self.x,
+            "size": self.width,
+            "y": self.y
+        }
