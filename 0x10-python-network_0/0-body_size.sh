@@ -1,3 +1,3 @@
 #!/usr/bin/bash
 #Sends https request to server and return size of response
-curl -s -w "%{size_download}\n" $1
+curl -s -o /temp -w "%{size_download}\n" "$1"
